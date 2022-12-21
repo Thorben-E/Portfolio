@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script type="module" src="/dist/index.js"></script>
-    <title>Snowpack App</title>
+    <title>Thorben Egberink</title>
   </head>
   <body>
     <nav>
-      <a href="">About</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
     <section class="homepage">
       <p>Hi There!</p>
       <h1>I'm Thorben Egberink</h1>
       <p>An Aspiring Web Developer</p>
-      <button>Get to know me</button>
+      <a href="#about"><button>Get to know me</button></a>
+      <img src="godown.jpg" alt="" class="godown">
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="left">
         <h1 class="about-h1">About<br>me</h1>
       </div>
@@ -31,46 +33,45 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <h1>Projects</h1>
       <div class="cards">
-        <div class="card">Instagram-clone
-          <img src="" alt="">
+        <div class="card">
+          <img src="instapreview.png" alt="" class="preview">
           <div class="info">
             <div class="upper">
               <h2>Instagram clone</h2>
-              github
-              live
+              <a href="https://github.com/Thorben-E/instagram-clone"><i class="devicon-github-original colored"></i></a>
+              <a href="https://inquisitive-sunburst-bbd98e.netlify.app"><img src="link.png" alt="" class="linkicon" ></a>
+            </div>
+            <div class="lower">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora laborum laboriosam aperiam.</p>
             </div>
           </div>
         </div>
         <div class="card">
-          <img src="" alt="">
-          <div class="info">
-            <div class="upper">
-              <h2>Instagram clone</h2>
-              github
-              live
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="" alt="">
+          <img src="shoppingpreview.png" alt="" class="preview">
           <div class="info">
             <div class="upper">
               <h2>CurrencyShop</h2>
-              github
-              live
+              <a href="https://github.com/Thorben-E/CurrencyShop"><i class="devicon-github-original colored"></i></a>
+              <a href="https://dulcet-alfajores-070544.netlify.app/"><img src="link.png" alt="" class="linkicon" ></a>
+            </div>
+            <div class="lower">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora laborum laboriosam aperiam.</p>
             </div>
           </div>
         </div>
         <div class="card">
-          <img src="" alt="">
+          <img src="where'swaldopreview.png" alt="" class="preview">
           <div class="info">
             <div class="upper">
               <h2>Where's Waldo</h2>
-              github
-              live
+              <a href="https://github.com/Thorben-E/where-s-waldo"><i class="devicon-github-original colored"></i></a>
+              <a href="https://adorable-chimera-fde78c.netlify.app/"><img src="link.png" alt="" class="linkicon" ></a>
+            </div>
+            <div class="lower">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora laborum laboriosam aperiam.</p>
             </div>
           </div>
         </div>
@@ -78,40 +79,44 @@
           <img src="" alt="">
           <div class="info">
             <div class="upper">
-              <h2>CV-Builder</h2>
-              github
-              live
+              <h2>Backend project</h2>
+              <i class="devicon-github-original colored"></i>
+              <img src="link.png" alt="" class="linkicon" >
+            </div>
+            <div class="lower">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora laborum laboriosam aperiam.</p>
             </div>
           </div>
         </div>
         <div class="card">
-          <img src="" alt="">
+          <img src="memorypreview.png" alt="" class="preview">
           <div class="info">
             <div class="upper">
               <h2>Crypto memory game</h2>
-              github
-              live
+              <a href="https://github.com/Thorben-E/crypto-memory-game"><i class="devicon-github-original colored"></i></a>
+              <a href="https://stalwart-torrone-8beedc.netlify.app"><img src="link.png" alt="" class="linkicon" ></a>
+            </div>
+            <div class="lower">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora laborum laboriosam aperiam.</p>
             </div>
           </div>
         </div>
         <div class="card">
-          <img src="" alt="">
+          <img src="battleshippreview.png" alt="" class="preview">
           <div class="info">
             <div class="upper">
               <h2>Battleship</h2>
-              github
-              live
+              <a href="https://github.com/Thorben-E/Battleship"><i class="devicon-github-original colored"></i></a>
+              <a href="https://splendorous-zuccutto-1e4bfe.netlify.app/"><img src="link.png" alt="" class="linkicon" ></a>
+            </div>
+            <div class="lower">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora laborum laboriosam aperiam.</p>
             </div>
           </div>
         </div>
-        <div class="card">CurrencyShop</div>
-        <div class="card">Where's Waldo</div>
-        <div class="card">CV-builder</div>
-        <div class="card">Crypto memory game</div>
-        <div class="card">Battleship</div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="left">
         <div class="left-infowrap">
           <h1>Contact me</h1>
