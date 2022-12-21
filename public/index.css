@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -54,31 +59,30 @@ nav a {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .left {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;
+    height: auto;
 }
 
 .about .right {
-    width: 50vw;
-    height: 100vh;
+    width: 100vw;
+    height: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 50%;
 }
 
 .about h1 {
     color: #3266ba;
-}
-
-.about .right p {
-    width: 80%;
 }
 
 .projects {
@@ -148,10 +152,57 @@ nav a {
     justify-content: center;
 }
 
+.phone,
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
 .contact .right {
     width: 50vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .left {
+        width: 100vw;
+        height: auto;
+    }
+
+    .about .right {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .contact .left {
+        width: 100vw;
+    }
+    .contact .right {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) {
+    .about-text {
+        width: 60%;
+    }
 }
