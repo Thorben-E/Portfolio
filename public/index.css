@@ -47,6 +47,16 @@ nav a {
     border: none;
     border-radius: 15px;
     padding: 10px 15px;
+    transition-duration: 0.5s;
+}
+
+.homepage button:hover {
+    transform: scale(1.1);
+}
+
+.faceimg {
+    border-radius: 150px;
+    width: 200px;
 }
 
 .godown {
@@ -166,6 +176,11 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.closeup {
+    width: 300px;
+    border-radius: 10px;
 }
 
 @media (max-width: 800px) {
