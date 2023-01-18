@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -89,6 +94,7 @@ nav a {
 
 .about-text {
     width: 50%;
+    max-width: 600px;
 }
 
 .about h1 {
