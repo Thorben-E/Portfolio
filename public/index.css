@@ -73,10 +73,6 @@ nav a {
 .about {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .about .left {
@@ -101,6 +97,10 @@ nav a {
     color: #3266ba;
 }
 
+.projects-title {
+    margin-top: 20px;
+}
+
 .projects {
     width: 100vw;
     min-height: 100vh;
@@ -108,6 +108,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .preview {
