@@ -93,26 +93,8 @@ nav a {
     max-width: 600px;
 }
 
-.about h1 {
-    color: #3266ba;
-}
-
 .projects-title {
     margin-top: 20px;
-}
-
-.projects {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.preview {
-    max-width: 100%;
 }
 
 .upper {
@@ -121,10 +103,6 @@ nav a {
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-}
-
-.upper img {
-    width: 25px;
 }
 
 .info {
@@ -166,6 +144,11 @@ nav a {
 .closeup {
     width: 300px;
     border-radius: 10px;
+}
+
+.contact-icon {
+    width: 35px;
+    margin-right: 10px;
 }
 
 @media (max-width: 800px) {

@@ -30,10 +30,10 @@
     <section id="about" class="about container d-flex flex-column justify-content-center align-items-center">
         <h1 class="about-h1">About me</h1>
         <p >Hi! I'm Thorben, I am currently learning backend web development at The Odin Project. I'm passionate about the skill of problem solving and lifelong learning. Reach out to thorbenegberink@gmail.com if you're interested in working together!</p>
-        <a class="btn btn-primary" href="">Download resume</a>
     </section>
-    <section id="projects" class="projects container">
-      <h1 class="projects-title">Projects</h1>
+    <section id="projects" class="container">
+      <div class='d-flex align-items-center flex-column gap-3'>
+        <h1 class="projects-title">Projects</h1>
         <div class="card" style="max-width: 30rem;">
           <img src="./blogapi.gif" alt="" class="card-img-left">
           <div class="card-body ">
@@ -47,7 +47,7 @@
             <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://blog-api-client-rho.vercel.app/">Click for live preview</a>
           </div>
         </div>
-        <div class="card" style="width: 30rem;">
+        <div class="card" style="max-width: 30rem;">
           <img src="./members-only.gif" alt="" class="card-img-left">
           <div class="card-body">
             <h3 class="card-title">Members Only</h3>
@@ -59,7 +59,7 @@
             <a class="btn btn-primary" href="https://members-only-production-1fe1.up.railway.app/">Click for live preview</a>
           </div>
         </div>
-        <div class="card" style="width: 30rem;">
+        <div class="card" style="max-width: 30rem;">
           <img src="./instaclone.gif" alt="" class="card-img-left">
           <div class="card-body">
             <h3 class="card-title">Instagram clone</h3>
@@ -70,7 +70,7 @@
             <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://thorben-instagram-clone.netlify.app">Click for live preview</a>
           </div>
         </div>
-        <div class="card" style="width: 30rem;">
+        <div class="card" style="max-width: 30rem;">
           <img src="./Bookshop.gif" alt="" class="card-img-left">
           <div class="card-body">
             <h3 class="card-title">BookShop</h3>
@@ -80,13 +80,24 @@
             <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://dulcet-alfajores-070544.netlify.app/">Click for live preview</a>
           </div>
         </div>
+      </div>
+      
     </section>
     <section id="contact" class="contact">
       <div class="left">
         <div class="left-infowrap">
           <h1>Contact me</h1>
           <p>Please get in touch if you think <br>our work could be mutually beneficial!</p>
-          <p>thorbenegberink@gmail.com</p> 
+          <p>thorbenegberink@gmail.com</p>
+          <p>Or find me here</p>
+          <a href="https://github.com/Thorben-E">
+            <img src="./github-mark.png" class="contact-icon" alt="">
+          </a>
+          <a href="https://www.linkedin.com/in/thorben-egberink/">
+            <img src="./linkedin.svg" class="contact-icon" alt="">
+          </a>
+          <p>Or if you are looking for my resume</p>
+          <a class="btn btn-primary" href="">Download resume</a>
         </div>
       </div>
       <div class="right">

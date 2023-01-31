@@ -4,6 +4,7 @@
     "build": "snowpack build"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.10.3",
     "canvas-confetti": "^1.2.0",
     "firebase": "^9.15.0"
   },
