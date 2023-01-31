@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script type="module" src="/dist/index.js"></script>
     <title>Thorben Egberink</title>
   </head>
   <body>
@@ -29,7 +28,7 @@
     </section>
     <section id="about" class="about container d-flex flex-column justify-content-center align-items-center">
         <h1 class="about-h1">About me</h1>
-        <p >Hi! I'm Thorben, I am currently learning backend web development at The Odin Project. I'm passionate about the skill of problem solving and lifelong learning. Reach out to thorbenegberink@gmail.com if you're interested in working together!</p>
+        <p class="about-text" >Hi! I'm Thorben, I am currently learning backend web development at The Odin Project. I'm passionate about the skill of problem solving and lifelong learning. Reach out to thorbenegberink@gmail.com if you're interested in working together!</p>
     </section>
     <section id="projects" class="container">
       <div class='d-flex align-items-center flex-column gap-3'>
@@ -43,8 +42,10 @@
             <span class="badge text-bg-secondary">Mongodb</span>
             <span class="badge text-bg-secondary">React</span>
             <p class="card-text">explanation...</p>
-            <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/blog-API">Source code</a>
-            <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://blog-api-client-rho.vercel.app/">Click for live preview</a>
+            <div class="project-buttons">
+              <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/blog-API">Source code</a>
+              <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://blog-api-client-rho.vercel.app/">Click for live preview</a>
+            </div>
           </div>
         </div>
         <div class="card" style="max-width: 30rem;">
@@ -55,8 +56,10 @@
             <span class="badge text-bg-secondary">Express</span>
             <span class="badge text-bg-secondary">Mongodb</span>
             <p class="card-text">An exclusive club where you can sign up and create messages. After solving a riddle to become a member you see the users of posts. And as admin, you're able to do the same as member, but you can also delete any message.</p>
-            <a class="btn btn-primary" href="https://github.com/Thorben-E/members-only">Source code</a>
-            <a class="btn btn-primary" href="https://members-only-production-1fe1.up.railway.app/">Click for live preview</a>
+            <div class="project-buttons">
+              <a class="btn btn-primary" href="https://github.com/Thorben-E/members-only">Source code</a>
+              <a class="btn btn-primary" href="https://members-only-production-1fe1.up.railway.app/">Click for live preview</a>
+            </div>
           </div>
         </div>
         <div class="card" style="max-width: 30rem;">
@@ -66,8 +69,10 @@
             <span class="badge text-bg-secondary">React</span>
             <span class="badge text-bg-secondary">Firebase</span>
             <p class="card-text">A instagram clone built with React, firebase auth, firebase storage and firestore.</p>
-            <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/instagram-clone">Source code</a>
-            <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://thorben-instagram-clone.netlify.app">Click for live preview</a>
+            <div class="project-buttons">
+              <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/instagram-clone">Source code</a>
+              <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://thorben-instagram-clone.netlify.app">Click for live preview</a>
+            </div>
           </div>
         </div>
         <div class="card" style="max-width: 30rem;">
@@ -76,8 +81,10 @@
             <h3 class="card-title">BookShop</h3>
             <span class="badge text-bg-secondary">React</span>
             <p class="card-text">A simple responsive online bookstore, built with React. Includes homepage, bookpage and checkout.</p>
-            <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/CurrencyShop">Source code</a>
-            <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://dulcet-alfajores-070544.netlify.app/">Click for live preview</a>
+            <div class="project-buttons">
+              <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/CurrencyShop">Source code</a>
+              <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://dulcet-alfajores-070544.netlify.app/">Click for live preview</a>
+            </div>
           </div>
         </div>
       </div>
