@@ -25,10 +25,28 @@
       <h1>I'm Thorben Egberink</h1>
       <p>A Full Stack Web Developer</p>
       <a href="#about"><button>Get to know me</button></a>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
     </section>
     <section id="about" class="about container d-flex flex-column justify-content-center align-items-center">
         <h1 class="about-h1">About me</h1>
-        <p class="about-text" >Hi! I'm Thorben, I am currently learning backend web development at The Odin Project. I'm passionate about the skill of problem solving and lifelong learning. Reach out to thorbenegberink@gmail.com if you're interested in working together!</p>
+        <p class="about-text" >Hi! I'm Thorben, I am a Full Stack web developer. I love learning new skills and applying these skills on cool projects. Reach out to <b>thorbenegberink@gmail.com</b> if you're interested in working together!</p>
+        <div class="buttons">
+          <button class="btn btn-primary">Download resume</button>
+          <a href="#projects"><button class="btn btn-primary">View projects</button></a>
+        </div>
+        
     </section>
     <section id="projects" class="container">
       <div class='d-flex align-items-center flex-column gap-3'>
@@ -41,7 +59,7 @@
             <span class="badge text-bg-secondary">Express</span>
             <span class="badge text-bg-secondary">Mongodb</span>
             <span class="badge text-bg-secondary">React</span>
-            <p class="card-text">explanation...</p>
+            <p class="card-text">Personal Blog website where I can post blogs and other users can view them and comment on the blog posts. </p>
             <div class="project-buttons">
               <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/blog-API">Source code</a>
               <a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://blog-api-client-rho.vercel.app/">Click for live preview</a>
@@ -55,10 +73,10 @@
             <span class="badge text-bg-secondary">NodeJS</span>
             <span class="badge text-bg-secondary">Express</span>
             <span class="badge text-bg-secondary">Mongodb</span>
-            <p class="card-text">An exclusive club where you can sign up and create messages. After solving a riddle to become a member you see the users of posts. And as admin, you're able to do the same as member, but you can also delete any message.</p>
+            <p class="card-text">An exclusive club where you can sign up, create messages, view other people their messages and comment on these messages.</p>
             <div class="project-buttons">
-              <a class="btn btn-primary" href="https://github.com/Thorben-E/members-only">Source code</a>
-              <a class="btn btn-primary" href="https://members-only-production-1fe1.up.railway.app/">Click for live preview</a>
+              <a class="btn btn-primary" rel="noopener noreferrer" href="https://github.com/Thorben-E/members-only">Source code</a>
+              <a class="btn btn-primary" rel="noopener noreferrer" href="https://members-only-production-1fe1.up.railway.app/">Click for live preview</a>
             </div>
           </div>
         </div>
