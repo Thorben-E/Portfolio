@@ -15,7 +15,7 @@
     <a href="/#projects">Projects</a>
     <a href="/#contact">Contact</a>
   </nav>
-  <main class="container">
+  <main class="container d-flex flex-column align-items-center">
     <h1 class="mt-2">Thorben's Blog</h1>
     <div class="project-buttons my-3">
       <a target="_blank" class="link me-2" rel="noopener noreferrer" href="https://github.com/Thorben-E/blog-API">Source code</a>
@@ -46,26 +46,38 @@
         </ul>
       </div>
     </section>
-    <section class="mt-2">
+    <section class="mt-2" style="width: 600px;" class="mw-50">
       <h4>Showcase of project</h4>
-      <p>Client frontend</p>
+      <p>Client</p>
       <img src="blogapi.gif" alt="couldn't load gif" style="width: 600px;" class="mw-50">
-      <p>Editor client frontend</p>
-      <img src="" alt="couldn't load gif">
+      <p>Editor client</p>
+      <img src="blog_editor_client.gif" alt="couldn't load gif">
+      <h4>Frontend</h4>
+      <p>I used ReactJS with tailwindcss for both clients. 
+      Both clients use the fetch api to communicate with the server.
+      The server sends back JSON data that is then loaded in a post, postpreview or comment component.
+      This was my first project using tailwindcss, I really enjoyed it because development feels way faster compared to normal css.</p>
       <h4>Backend</h4>
-      <p>Show use of mvc</p>
-      <p>Authentication</p>
-      <p>authorization</p>
-      <p>Explain CRUD functionality with mongo</p>
-      <p>Explain use of imagekit</p>
-      <p>Show routes and controller</p>
-      <h4>both frontend</h4>
-      <p>React</p>
-      <p>tailwindcss</p>
-      <p>Fetch api for getting data</p>
-      <p>React router browserrouter</p>
-      <p>dynamic postpreview, post, comment</p>
-      <p>fetch or form POST for</p>
+      <p>Because this is the largest project I have yet built, I wanted to use a pattern to increase readability and make the code easy to change later.
+        To achieve this I implemented <a href="https://developer.mozilla.org/en-US/docs/Glossary/MVC">MVC</a> (Model, View, Controller). Since the server 
+        only has to send back data, I did not use views. But having kept the routes and controllers seperate makes it way easier to navigate through the code.
+      </p>
+      <p><b>Authentication</b></p>
+      <p>Only the editor client needed authentication on this project, because everyone should be able to view the blog posts on the client.
+        And since I will be the only one creating blogs, I did not want to implement a complete signup and login system. So I built a very easy system that just 
+        checks the username and password and if these are correct I can authorize the user.</p>
+      <p><b>Authorization</b></p>
+      <p>For my members only project I used sessions to authorize the user, so I wanted to learn and use something else for this project.
+        For this project I used <a href="https://en.wikipedia.org/wiki/JSON_Web_Token">JWT</a> (JsonWebToken). Once the user has entered the correct username and 
+        password a token is created and sent to the frontend. In the frontend this token is set in localstorage for later use. <br> If the user enters the website, 
+        their localstorage will be checked if it contains a token. If it does, this token will be validated. If the token is correct, the user will be logged in without
+         having to enter their username and password. </p>
+      <p><b>Imagekit</b></p>
+      <p>I wanted to be able to store an image witha post, but because images can be of quite a big size I would need something other than what I was using for my other data.
+        The option mongodb was offering (gridfs), was not easy to configure. I had a real hard time with their documentation so I looke for something else. So I found <a href="https://imagekit.io/">Imagekit</a>. 
+        Imagekit has quite a lot of features but I only needed to upload and view images. Luckily their documentation was great and I had image support running in a few hours.</p>
+      <p><b>Storing data and functionality</b></p>
+      <p>In the image below you can see how the data is stored and how the functionality works on a high level.</p>
       <img src="blog_flowchart.jpg" alt="" style="width: 600px;" class="mw-50">
     </section>
     

@@ -15,7 +15,7 @@
     <a href="/#projects">Projects</a>
     <a href="/#contact">Contact</a>
   </nav>
-  <main class="container">
+  <main class="container d-flex flex-column align-items-center">
     <h1 class="mt-2">Members only</h1>
     <div class="project-buttons my-3">
       <a class="link me-2" rel="noopener noreferrer" href="https://github.com/Thorben-E/members-only">Source code</a>
@@ -43,11 +43,25 @@
       </div>
     </section>
     <section class="mt-2">
-      <p>show website with gifs</p>
-      <p><b>Authentication</b></p>
+      <h4>Showcase of project</h4>
+      <img src="members-only.gif" alt="couldn't load gif">
+      <p class="mt-2"><b>Authentication</b></p>
+      <p>I used passportjs username & password for authentication. 
+        This was my first full stack project that has authentication, 
+        so I did not really know where to start. I got passportjs recommended
+         so I tried implementing it. I struggled hard for 2 weeks because the
+        documentation of passportjs is very bad. Some crucial steps that I got
+      help with weren't even on the documentation. But after 2 weeks I got it working.</p>
       <p><b>Authorization</b></p>
-      <p><b>Explain CRUD functionality + flowcharts</b></p>
-      <p>EJS for views, explain how it uses dynamic data</p>
+      <p>For authorization I used the serialize and deserialize functions from passportjs.
+        This uses sessions to keep the user logged in.
+      </p>
+      <p><b>Views</b></p>
+      <p>For frontend I used EJS because it is very similar to html. I loaded the data from the server in the EJS views.</p>
+      <p><b>Storing data and functionality</b></p>
+      <p>In the image below you can see how the data is stored in MongoDB and how the functionality
+        of the website works on a high level.
+      </p>
       <img src="members_flowchart.jpg" alt="couldn't load" style="width: 600px;" class="mw-50">
     </section>
     
